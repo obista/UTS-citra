@@ -1,0 +1,13 @@
+>> % Membaca gambar
+input_image = imread('67079.png');
+
+% Menggunakan filter median dengan jendela 3x3
+output_image = medfilt2(input_image, [3 3]);
+
+% Menampilkan gambar asli dan hasilnya
+subplot(1, 2, 1);
+imshow(input_image);
+title('Gambar Asli');
+subplot(1, 2, 2);
+imshow(output_image);
+title('Hasil Filter Median');
